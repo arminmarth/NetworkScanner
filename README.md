@@ -1,5 +1,9 @@
 # NetworkScanner
 
+[![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/arminmarth/NetworkScanner/python-tests.yml?branch=main&label=tests)](https://github.com/arminmarth/NetworkScanner/actions)
+
 A powerful Python tool for scanning networks to identify open ports and conduct web enumeration.
 
 ## Features
@@ -11,6 +15,14 @@ A powerful Python tool for scanning networks to identify open ports and conduct 
 - **Progress Reporting**: Real-time scan progress updates
 - **Results Export**: Save scan results to file for further analysis
 
+## Directory Structure
+
+- `src/` - Contains all source code
+  - `network_scanner.py` - Main network scanning tool with multithreading support
+  - `port_scanner_socket.py` - Lightweight port scanner implementation
+- `tests/` - Unit tests for the project
+- `examples/` - Example usage scenarios
+
 ## Installation
 
 No installation required beyond Python 3.6+. The script uses only standard library modules.
@@ -20,8 +32,9 @@ No installation required beyond Python 3.6+. The script uses only standard libra
 git clone https://github.com/arminmarth/NetworkScanner.git
 cd NetworkScanner
 
-# Make the script executable
-chmod +x network_scanner.py
+# Make the scripts executable
+chmod +x src/network_scanner.py
+chmod +x src/port_scanner_socket.py
 ```
 
 ## Usage
